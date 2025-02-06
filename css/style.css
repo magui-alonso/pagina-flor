@@ -177,13 +177,39 @@ header .texto-header .boton:hover {
   margin: auto;
 }
 .card-tarot .texto-card-tarot {
-  width: 60%;
+  width: 65%;
 }
 .card-tarot .texto-card-tarot h4 {
   font-family: "Bad Script", cursive;
 }
-.card-tarot .img-card-tarot {
-  width: 30%;
+.card-tarot .image-container {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.card-tarot .flip-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card-tarot .flipped {
+  transform: rotateY(180deg);
+}
+.card-tarot .front, .card-tarot .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card-tarot .front img, .card-tarot .back img {
+  width: 100%;
+}
+.card-tarot .back {
+  transform: rotateY(180deg);
 }
 
 .container-sobre-mi {
@@ -455,6 +481,52 @@ footer h6 {
   text-align: center;
 }
 
+.talleres {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.talleres .card-talleres {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.talleres .card-talleres .img-card {
+  width: 30%;
+}
+.talleres .card-talleres .texto-card {
+  width: 60%;
+}
+.talleres .card-talleres .texto-card h4 {
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 20px;
+}
+.talleres .card-talleres .texto-card .boton-talleres {
+  margin-top: 5px;
+  color: #fff;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 2px 30px;
+  border: #CC4B3D solid 1px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  margin-right: 20px;
+}
+.talleres .card-talleres .texto-card .boton-talleres:hover {
+  background-color: #CC4B3D;
+}
+.talleres .card-talleres .texto-card .boton-talleres:focus {
+  background-color: #CC4B3D;
+  border-radius: 30px;
+}
+.talleres .reverse {
+  flex-direction: row-reverse;
+}
+
 .modal-content {
   background-color: #0C0E19;
 }
@@ -672,7 +744,12 @@ footer h6 {
     font-size: 14px;
   }
   .blog section a {
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .blog section a b {
+    font: bold 700 12px Open Sans;
+    padding-right: 3px;
   }
   .videos .cont-videos .texto-videos h3 {
     font-size: 18px;
@@ -838,7 +915,7 @@ footer h6 {
     width: 35px;
   }
   .header-secciones {
-    height: 530px;
+    height: 620px;
     padding-top: 20px;
   }
   .header-secciones .header-img-secciones img {
@@ -884,5 +961,18 @@ footer h6 {
   }
   .videos .cont-videos .texto-videos h3 {
     font-size: 24px;
+  }
+}
+@media (min-width: 968px) {
+  .titulo-index {
+    font-size: 48px;
+    margin: 50px 0;
+  }
+  .parrafo-index {
+    width: 65%;
+    margin-bottom: 50px;
+  }
+  .parrafo-index p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
