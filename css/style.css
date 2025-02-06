@@ -178,6 +178,7 @@ header .texto-header .boton:hover {
 }
 .card-tarot .texto-card-tarot {
   width: 65%;
+  padding-right: 20px;
 }
 .card-tarot .texto-card-tarot h4 {
   font-family: "Bad Script", cursive;
@@ -199,13 +200,15 @@ header .texto-header .boton:hover {
 .card-tarot .flipped {
   transform: rotateY(180deg);
 }
-.card-tarot .front, .card-tarot .back {
+.card-tarot .front,
+.card-tarot .back {
   width: 100%;
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
 }
-.card-tarot .front img, .card-tarot .back img {
+.card-tarot .front img,
+.card-tarot .back img {
   width: 100%;
 }
 .card-tarot .back {
@@ -290,7 +293,7 @@ footer h6 {
   align-items: flex-start;
   padding-top: 25px;
   width: 100%;
-  height: 220px;
+  height: 275px;
 }
 .header-secciones .header-img-secciones {
   width: 45%;
@@ -486,7 +489,7 @@ footer h6 {
   margin-bottom: 50px;
 }
 .talleres .card-talleres {
-  width: 65%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -501,14 +504,14 @@ footer h6 {
 }
 .talleres .card-talleres .texto-card h4 {
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 .talleres .card-talleres .texto-card .boton-talleres {
   margin-top: 5px;
   color: #fff;
   background-color: transparent;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 9px;
   color: #ffffff;
   padding: 2px 30px;
   border: #CC4B3D solid 1px;
@@ -710,7 +713,7 @@ footer h6 {
     width: 50px;
   }
   .header-secciones {
-    height: 390px;
+    height: 450px;
     padding-top: 20px;
   }
   .header-secciones .header-secciones-textos {
@@ -799,6 +802,27 @@ footer h6 {
   .containerFormContacto .form-contacto #botonEnviar {
     font-size: 18px;
     padding: 2px 40px;
+  }
+  .talleres {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .talleres .card-talleres {
+    width: 80%;
+  }
+  .talleres .card-talleres .texto-card {
+    width: 60%;
+  }
+  .talleres .card-talleres .texto-card h4 {
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+  }
+  .talleres .card-talleres .texto-card p {
+    padding-bottom: 20px;
+  }
+  .talleres .card-talleres .texto-card .boton-talleres {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 968px) {
@@ -961,6 +985,15 @@ footer h6 {
   }
   .videos .cont-videos .texto-videos h3 {
     font-size: 24px;
+  }
+  .talleres .card-talleres {
+    width: 65%;
+  }
+  .talleres .card-talleres .texto-card {
+    width: 60%;
+  }
+  .talleres .card-talleres .texto-card .boton-talleres {
+    font-size: 16px;
   }
 }
 @media (min-width: 968px) {
