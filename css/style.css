@@ -2,63 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /* font-family: 'Bad Script', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+
+/* INICIO General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.img-fluid {
-  width: 100%;
-}
-
-h1 {
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-h4 {
-  font-size: 12px;
-}
-
-h5 {
-  font-size: 10px;
-}
-
-h6 {
-  font-size: 9px;
-}
-
-p {
-  font-size: 10px;
-  font-weight: 300;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
+body {
   font-family: "Open Sans", sans-serif;
+  background: #0C0E19;
+  background: linear-gradient(to bottom, #0C0E19 1.13%, #132E3B 3.54%, #132E3B 7.54%, #0C6073 12.72%, #0C6073 15.72%, #132E3B 20.54%, #0C0E19 31.84%, #0C0E19 50.58%, #0C0E19 58.62%, #0C0E19 63.62%, #132E3B 74.54%, #0C0E19 85.32%);
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-}
-a:hover {
-  color: #fff;
+.body-sections {
+  background: #0C0E19;
 }
 
 hr {
@@ -67,73 +29,116 @@ hr {
   color: #fff;
 }
 
-body {
-  background: #0C0E19;
-  background: linear-gradient(to bottom, #0C0E19 1.13%, #132E3B 3.54%, #132E3B 7.54%, #0C6073 12.72%, #0C6073 15.72%, #132E3B 20.54%, #0C0E19 31.84%, #0C0E19 50.58%, #0C0E19 58.62%, #0C0E19 63.62%, #132E3B 74.54%, #0C0E19 85.32%);
-}
+/* FIN General Reset */
 
-header {
-  position: relative;
-  height: 30vh;
-}
-header .img-header {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-}
-header .texto-header {
-  position: absolute;
-  top: 10px;
-}
-header .texto-header h1 {
-  font-family: "Bad Script", cursive;
-  margin-left: 20px;
-  margin-top: 10px;
-  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
-}
-header .texto-header h4 {
-  font-family: "Bad Script", cursive;
-  margin-left: 20px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
-}
-header .texto-header .boton {
-  margin-left: 20px;
-  margin-top: 5px;
-  color: #fff;
+/* INICIO Botones */
+.button {
+  font-size: 16px;
   background-color: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-size: 8px;
   color: #ffffff;
-  padding: 2px 11px;
   border: #CC4B3D solid 1px;
-  border-radius: 30px;
+  border-radius: 60px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
-header .texto-header .boton:hover {
+
+.button:hover {
   background-color: #CC4B3D;
 }
 
-.titulo-index {
+.primary {
+  padding: 3px 20px;
+}
+
+.secondary {
+  padding: 2px 20px;
+  font-size: 14px;
+}
+
+.tertiary {
+  border-radius: 0;
+  border: transparent;
+  border-bottom: 1px solid #fff;
+  padding-inline: 3px;
+  font-weight: 400;
+  transition: transform 0.3s ease;
+  /* Transición suave */
+  margin-right: 10px;
+}
+
+.tertiary:hover {
+  background-color: transparent;
+  color: #CC4B3D;
+  border-bottom: 2px solid #CC4B3D;
+}
+
+/* FIN Botones */
+
+/* INICIO Header encima del Hero */
+header.index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  color: #ffffff;
+  z-index: 10;
+  text-align: left;
+}
+
+header.index h1 {
   font-family: "Bad Script", cursive;
-  text-align: center;
-  margin: 0px 0 20px 0;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: 52px;
   text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
 }
 
-.parrafo-index {
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 20px;
-}
-.parrafo-index p {
-  text-align: center;
+header.index p {
+  font-family: "Bad Script", cursive;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 36px;
 }
 
+header.index button {
+  margin-left: 100px;
+}
+
+/* FIN Header encima del Hero */
+
+/* INICIO Hero Section */
+.hero {
+  padding-bottom: 50px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  font-size: 48px;
+  margin: 50px 0;
+  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.hero-text {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* FIN Hero Section */
+
+/* INICIO Section menu-cards */
 .menu-cards {
   width: 85%;
   display: flex;
@@ -141,48 +146,78 @@ header .texto-header .boton:hover {
   justify-content: center;
   margin: auto;
 }
+
+.menu-cards a {
+  text-decoration: none;
+}
+
 .menu-cards .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 2px #ffffff solid;
-  /*p {
-      padding: 0 5px;
-      text-align: center;
-  }*/
+  border-bottom: 1.5px #b7b7b7 solid;
 }
+
 .menu-cards .cards:hover {
-  filter: drop-shadow(2px 2px 6px #CC4B3D);
+  border-bottom: 1.5px #CC4B3D solid;
+  box-shadow: 0 8px 6px -6px black;
 }
+
 .menu-cards .cards img {
   width: 50%;
   height: auto;
 }
-.menu-cards .cards h4 {
+
+.menu-cards .cards p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
   padding-bottom: 10px;
+
 }
 
+/* FIN Section menu-cards */
+
+/* INICIO Tarot Section */
 .titulo-tarot {
   font-family: "Bad Script", cursive;
+  font-size: 40px;
   text-align: center;
-  margin: 50px 0 25px 0;
+  margin: 100px 0 50px 0;
   text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
 }
 
 .card-tarot {
-  width: 85%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
 }
+
 .card-tarot .texto-card-tarot {
   width: 65%;
   padding-right: 20px;
 }
+
 .card-tarot .texto-card-tarot h4 {
   font-family: "Bad Script", cursive;
+  text-align: left;
+  font-size: 32px;
 }
+
+.card-tarot .texto-card-tarot .text {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card-tarot .img-text {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
 .card-tarot .image-container {
   width: 200px;
   height: 300px;
@@ -190,6 +225,7 @@ header .texto-header .boton:hover {
   perspective: 1000px;
   cursor: pointer;
 }
+
 .card-tarot .flip-box {
   width: 100%;
   height: 100%;
@@ -197,9 +233,11 @@ header .texto-header .boton:hover {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .card-tarot .flipped {
   transform: rotateY(180deg);
 }
+
 .card-tarot .front,
 .card-tarot .back {
   width: 100%;
@@ -207,234 +245,305 @@ header .texto-header .boton:hover {
   position: absolute;
   backface-visibility: hidden;
 }
+
 .card-tarot .front img,
 .card-tarot .back img {
   width: 100%;
 }
+
 .card-tarot .back {
   transform: rotateY(180deg);
 }
 
-.container-sobre-mi {
-  margin-top: 50px;
+/* FIN Tarot Section */
+
+/* INICIO Section Sobre mi */
+
+section.about-me {
   position: relative;
-  height: 300px;
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.container-sobre-mi .img-fondo-sobre-mi {
-  position: absolute;
-  bottom: 0;
-}
-.container-sobre-mi .card-sobre-mi {
-  position: absolute;
-  margin: auto;
-  width: 85%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.container-sobre-mi .card-sobre-mi img {
-  width: 25%;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-}
-.container-sobre-mi .card-sobre-mi div {
-  margin-left: 10px;
-}
-.container-sobre-mi .card-sobre-mi div .card-title {
-  font-family: "Bad Script", cursive;
-  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
-  margin-bottom: 15px;
-}
-.container-sobre-mi .card-sobre-mi div p {
-  line-height: 2px;
-  font-size: 9px;
-  font-weight: 300;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 150px;
 }
 
+section.about-me .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  z-index: 2;
+  /* Ensures it's above the background */
+}
+
+section.about-me .profile-image {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+section.about-me .text {
+  max-width: 500px;
+}
+
+.text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "Bad Script", cursive;
+  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+section.about-me .text p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+section.about-me .background-decorations {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  /* Behind the content */
+}
+
+section.about-me .decor-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* FIN section sobre mi */
+
+/* INICIO Footer */
 footer {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
-footer h4 {
-  text-align: center;
+
+.footer-title {
+  font-size: 24px;
 }
+
+footer p {
+  font-size: 14px;
+}
+
 footer .redes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 30px;
+  justify-content: center;
+  gap: 35px;
+  width: 100%;
+  padding-bottom: 30px;
 }
+
 footer .redes img {
-  width: 25px;
+  width: 35px;
 }
+
 footer .redes img:hover {
   filter: drop-shadow(1px 1px 4px #fff);
 }
-footer h6 {
+
+/* FIN Footer */
+
+/* INICIO Header seciones*/
+.header-section {
   text-align: center;
+  background: linear-gradient(180deg, rgba(247, 135, 103, 0.1672) 0%, rgba(12, 14, 25, 0.44) 100%);
+  height: 450px;
 }
 
-.body-secciones {
-  background: #0C0E19;
-}
-
-.header-secciones {
-  position: absolute;
-  background: linear-gradient(180deg, rgba(247, 135, 103, 0.1672) 0%, rgba(12, 51, 65, 0.44) 100%);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 25px;
-  width: 100%;
-  height: 275px;
-}
-.header-secciones .header-img-secciones {
-  width: 45%;
-  z-index: 12;
-}
-.header-secciones .header-img-secciones img {
-  width: 100%;
-}
-.header-secciones .header-secciones-textos {
-  width: 60%;
-  z-index: 10;
-  padding: 10px;
-}
-.header-secciones .header-secciones-textos h1 {
+.title {
+  font-size: 64px;
   font-family: "Bad Script", cursive;
-  font-size: 24px;
-  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
-}
-.header-secciones .header-secciones-textos h3 {
-  font-size: 12px;
-  margin-top: 20px;
-}
-.header-secciones .header-secciones-textos p {
-  width: 100%;
-  font-size: 9px;
-  font-weight: 300;
-  line-height: 12px;
-}
-.header-secciones .header-secciones-textos .boton-2 {
-  margin-top: 5px;
-  margin-right: 20px;
   color: #fff;
-  background-color: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-size: 9px;
-  color: #ffffff;
-  padding: 2px 30px;
-  border: #CC4B3D solid 1px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
-.header-secciones .header-secciones-textos .boton-2:hover {
-  background-color: #CC4B3D;
+
+.header-section .text-content h2 {
+  margin: 40px 0 20px 0;
 }
-.header-secciones .header-secciones-textos .boton-2:focus {
-  background-color: #CC4B3D;
-  border-radius: 30px;
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.illustration img {
+  width: 100%;
+}
+
+.text-content {
+  text-align: left;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .menu-cards-secciones {
-  position: relative;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  z-index: 5;
+  background-color: transparent;
+  margin-bottom: 100px;
 }
+
+.menu-cards-secciones a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu-cards-secciones .activo {
   border-bottom: 2px #CC4B3D solid;
 }
+
 .menu-cards-secciones .no-activo {
-  border-bottom: 2px #ffffff solid;
+  border-bottom: 1.5px #b7b7b7 solid;
 }
+
 .menu-cards-secciones .cards-b {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  padding-inline: 20px;
 }
+
 .menu-cards-secciones .cards-b:hover {
   filter: drop-shadow(2px 2px 6px #CC4B3D);
 }
+
 .menu-cards-secciones .cards-b img {
   width: 50%;
   height: auto;
 }
-.menu-cards-secciones .cards-b h4 {
-  padding-bottom: 10px;
-}
+
+
+/* FIN Header seciones*/
+
+/* INICIO Section blog*/
 
 .blog {
   margin: auto;
-  width: 80%;
-  margin-top: 40px;
+  width: 68%;
 }
-.blog section {
-  margin-bottom: 40px;
+
+.blog div {
+  margin-bottom: 60px;
 }
-.blog section p {
+
+.blog div h3 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.blog div p {
+  font-size: 16px;
   font-weight: 300;
+  text-align: left;
 }
-.blog section img {
+
+.blog div img {
   width: 20px;
 }
-.blog section a {
-  font-size: 10px;
+
+.blog div a {
+  display: block;
   color: #77e4ff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+.blog div a b {
+  padding-right: 5px;
+}
+
+/* FIN Section blog*/
+
+/* INICIO Section videos*/
 
 .videos {
   width: 80%;
   margin: auto;
-  margin-top: 60px;
 }
+
 .videos .cont-videos {
   margin: auto;
   margin-bottom: 40px;
 }
+
 .videos .cont-videos iframe {
   width: 100%;
   height: 315px;
 }
+
 .videos .cont-videos .texto-videos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.videos .cont-videos .texto-videos h3 {
-  font-family: "Open Sans", sans-serif;
+
+.videos .cont-videos .texto-videos p {
   margin: 0;
   font-weight: 300;
 }
+
 .videos .cont-videos .texto-videos img {
-  width: 20px;
+  width: 30px;
   margin: 5px;
 }
 
+/* FIN Section Videos*/
+
+
+/* INICIO Section preguntas*/
+
 .consultas {
-  width: 80%;
+  width: 68%;
   margin: auto;
 }
+
+/*
 .consultas .seccion-form-consultas {
-  margin: 20px 0;
+  margin: 100px 0;
 }
 .consultas .seccion-form-consultas h4 {
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   margin: 30px;
 }
+
 .consultas .seccion-form-consultas .containerForm {
   margin: auto;
 }
@@ -444,13 +553,12 @@ footer h6 {
   align-items: center;
 }
 .consultas .seccion-form-consultas .campos-form .label-form {
-  font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  font-size: 11px;
+  font-size: 16px;
 }
 .consultas .seccion-form-consultas .campos-form .inputs-form {
   background-color: transparent;
-  width: 100%;
+  width: 60%;
   border: none;
   border-bottom: #CC4B3D solid 2px;
   margin-bottom: 20px;
@@ -459,7 +567,6 @@ footer h6 {
 .consultas .seccion-form-consultas .campos-form #botonEnviar {
   color: #fff;
   background-color: transparent;
-  font-family: "Open Sans", sans-serif;
   font-size: 9px;
   color: #ffffff;
   padding: 2px 20px;
@@ -469,543 +576,334 @@ footer h6 {
 }
 .consultas .seccion-form-consultas .campos-form #botonEnviar:hover {
   background-color: #CC4B3D;
-}
+}*/
+
 .consultas .texto-consultas {
   font-family: "Bad Script", cursive;
-  font-size: 28px;
+  font-size: 42px;
   text-align: center;
   margin: 50px 0 25px 0;
   text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
 }
+
 .consultas .respuestas {
   margin: 40px 0;
 }
-.consultas .respuestas h4 {
+
+.dejar-consulta .text {
   text-align: center;
+  font-size: 24px;
+  margin: 50px 0 25px 0;
 }
 
-.talleres {
-  margin-top: 50px;
+.dejar-consulta button {
   margin-bottom: 50px;
 }
+
+/* FIN Section preguntas*/
+
+/* INICIO Section Talleres*/
+
+.talleres {
+  margin-bottom: 100px;
+}
+
 .talleres .card-talleres {
-  width: 90%;
+  width: 68%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
   margin-bottom: 60px;
 }
+
 .talleres .card-talleres .img-card {
   width: 30%;
+  border-radius: 2px;
 }
+
 .talleres .card-talleres .texto-card {
   width: 60%;
 }
+
 .talleres .card-talleres .texto-card h4 {
-  font-family: "Open Sans", sans-serif;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
+  text-align: left;
 }
-.talleres .card-talleres .texto-card .boton-talleres {
-  margin-top: 5px;
-  color: #fff;
-  background-color: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-size: 9px;
-  color: #ffffff;
-  padding: 2px 30px;
-  border: #CC4B3D solid 1px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  margin-right: 20px;
+
+.talleres .card-talleres .texto-card p {
+  text-align: left;
+  font-weight: 300;
 }
-.talleres .card-talleres .texto-card .boton-talleres:hover {
-  background-color: #CC4B3D;
+
+.talleres .card-talleres .texto-card div {
+  text-align: left;
 }
-.talleres .card-talleres .texto-card .boton-talleres:focus {
-  background-color: #CC4B3D;
-  border-radius: 30px;
-}
+
 .talleres .reverse {
   flex-direction: row-reverse;
 }
 
-.modal-content {
-  background-color: #0C0E19;
-}
+/* FIN Section Talleres*/
 
-.modal-title {
-  font-family: "Bad Script", cursive;
-}
 
-.boton-cerrar {
-  color: #fff;
-  background-color: #CC4B3D;
-  font-family: "Open Sans", sans-serif;
-  font-size: 9px;
-  color: #ffffff;
-  padding: 2px 20px;
-  border: #CC4B3D solid 1px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-}
-.boton-cerrar:hover {
-  color: #fff;
-  box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.2509803922);
-}
+/* INICIO Responsive Design index*/
 
-.containerFormContacto {
-  margin: auto;
-  margin-bottom: 30px;
-  width: 80%;
-}
-.containerFormContacto .form-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.containerFormContacto .form-contacto .label-form-contacto {
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  font-size: 11px;
-}
-.containerFormContacto .form-contacto .inputs-form-contacto {
-  background-color: transparent;
-  width: 100%;
-  border: none;
-  border-bottom: #CC4B3D solid 2px;
-  margin-bottom: 20px;
-  height: 20px;
-  color: #fff;
-}
-.containerFormContacto .form-contacto #botonEnviar {
-  color: #fff;
-  background-color: transparent;
-  font-family: "Open Sans", sans-serif;
-  font-size: 9px;
-  color: #ffffff;
-  padding: 2px 20px;
-  border: #CC4B3D solid 1px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-}
-.containerFormContacto .form-contacto #botonEnviar:hover {
-  background-color: #CC4B3D;
-}
+/*index*/
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: 42px;
-  }
-  h2 {
+@media (max-width: 990px) {
+  header.index h1 {
+    margin-left: 80px;
     font-size: 40px;
   }
-  h3 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  h5 {
-    font-size: 18px;
-  }
-  h6 {
-    font-size: 14px;
-  }
-  p {
-    font-size: 16px;
-    font-weight: 300;
-  }
-  body {
-    background: #0C0E19;
-    background: linear-gradient(to bottom, #0C0E19 3.13%, #0C6073 15.72%, #0C0E19 21.84%, #0C0E19 31.84%, #0C0E19 50.58%, #0C0E19 58.62%, #0C0E19 63.62%, #132E3B 74.54%, #0C0E19 85.32%);
-  }
-  header {
-    position: relative;
-    height: 400px;
-  }
-  header .img-header {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-  }
-  header .texto-header {
-    top: 15px;
-  }
-  header .texto-header h1 {
-    font-size: 42px;
-    margin-left: 50px;
-  }
-  header .texto-header h4 {
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  header .texto-header .boton {
-    margin-left: 50px;
-    margin-top: 10px;
-    font-size: 14px;
-    border: #CC4B3D solid 2px;
-    border-radius: 60px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  }
-  .titulo-index {
-    margin: 40px 0;
-  }
-  .menu-cards {
-    width: 85%;
-  }
-  .menu-cards .cards {
-    border-bottom: 2px #ffffff solid;
-  }
-  .menu-cards .cards:hover {
-    border-bottom: 2px #CC4B3D solid;
-    box-shadow: 0 8px 6px -6px black;
-  }
-  .menu-cards .cards img {
-    width: 50%;
-  }
-  .menu-cards .cards p {
-    padding: 0 15px;
-  }
-  .titulo-tarot {
-    margin: 70px 0 50px 0;
-  }
-  .card-tarot {
-    width: 80%;
-  }
-  .card-tarot .texto-card-tarot {
-    width: 70%;
-  }
-  .card-tarot .img-card-tarot {
-    width: 25%;
-  }
-  .container-sobre-mi {
-    margin-top: 100px;
-    height: 600px;
-  }
-  .container-sobre-mi .card-sobre-mi {
-    left: 80px;
-    width: 80%;
-  }
-  .container-sobre-mi .card-sobre-mi img {
-    width: 30%;
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2509803922);
-  }
-  .container-sobre-mi .card-sobre-mi div {
-    margin-left: 20px;
-  }
-  .container-sobre-mi .card-sobre-mi div .card-title {
-    margin-bottom: 20px;
-  }
-  .container-sobre-mi .card-sobre-mi div p {
-    line-height: 16px;
-    font-size: 18px;
-  }
-  footer {
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  footer .redes {
-    margin: 30px;
-  }
-  footer .redes img {
-    width: 50px;
-  }
-  .header-secciones {
-    height: 450px;
-    padding-top: 20px;
-  }
-  .header-secciones .header-secciones-textos {
-    height: 300px;
-    width: 50%;
-    padding-top: 30px;
-  }
-  .header-secciones .header-secciones-textos h1 {
-    font-size: 48px;
-  }
-  .header-secciones .header-secciones-textos h3 {
-    margin: 20px 0 10px 0;
-    font-size: 24px;
-  }
-  .header-secciones .header-secciones-textos p {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 50px;
-  }
-  .header-secciones .header-secciones-textos .boton-2 {
-    font-size: 14px;
-    padding: 3px 30px;
-    margin-right: 20px;
-  }
-  .menu-cards-secciones .cards-b {
-    margin-top: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .menu-cards-secciones .cards-b h4 {
-    font-size: 14px;
-  }
-  .blog section a {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .blog section a b {
-    font: bold 700 12px Open Sans;
-    padding-right: 3px;
-  }
-  .videos .cont-videos .texto-videos h3 {
-    font-size: 18px;
-  }
-  .videos .cont-videos .texto-videos img {
-    width: 30px;
-  }
-  .consultas .seccion-form-consultas {
-    margin: 80px 0;
-  }
-  .consultas .seccion-form-consultas h4 {
-    font-size: 24px;
-    margin: 30px;
-  }
-  .consultas .seccion-form-consultas .campos-form .label-form {
-    font-size: 18px;
-  }
-  .consultas .seccion-form-consultas .campos-form .inputs-form {
-    width: 60%;
-    margin-bottom: 30px;
-    height: 40px;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-  }
-  .consultas .seccion-form-consultas .campos-form #botonEnviar {
-    font-size: 18px;
-    padding: 2px 40px;
-  }
-  .consultas .texto-consultas {
-    font-size: 48px;
-  }
-  .boton-cerrar {
-    font-size: 18px;
-  }
-  .containerFormContacto .form-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .containerFormContacto .form-contacto .label-form-contacto {
-    font-size: 18px;
-  }
-  .containerFormContacto .form-contacto .inputs-form-contacto {
-    margin-bottom: 30px;
-    height: 40px;
-  }
-  .containerFormContacto .form-contacto #botonEnviar {
-    font-size: 18px;
-    padding: 2px 40px;
-  }
-  .talleres {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .talleres .card-talleres {
-    width: 80%;
-  }
-  .talleres .card-talleres .texto-card {
-    width: 60%;
-  }
-  .talleres .card-talleres .texto-card h4 {
-    font-family: "Open Sans", sans-serif;
-    padding-bottom: 20px;
-  }
-  .talleres .card-talleres .texto-card p {
-    padding-bottom: 20px;
-  }
-  .talleres .card-talleres .texto-card .boton-talleres {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 968px) {
-  body {
-    background: #0C0E19;
-    background: linear-gradient(to bottom, #0C0E19 3.13%, #0C6073 21.72%, #0C0E19 31.84%, #0C0E19 50.58%, #0C0E19 58.62%, #0C0E19 63.62%, #132E3B 74.54%, #0C0E19 85.32%);
-  }
-  header {
-    position: relative;
-    height: 650px;
-  }
-  header .img-header {
-    position: absolute;
-    top: 30px;
-    bottom: 0;
-  }
-  header .texto-header {
-    top: 20px;
-  }
-  header .texto-header h1 {
-    margin-left: 100px;
+
+  header.index p {
+    margin-left: 80px;
     margin-top: 20px;
-    font-size: 52px;
-  }
-  header .texto-header h4 {
-    font-family: "Bad Script", cursive;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 36px;
-  }
-  header .texto-header .boton {
-    margin-left: 100px;
-    margin-top: 10px;
-    font-size: 20px;
-    padding: 3px 20px;
-    border: #CC4B3D solid 1px;
-    border-radius: 60px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  }
-  .titulo-index {
-    font-size: 48px;
-    margin: 70px 0;
-  }
-  .parrafo-index {
-    width: 65%;
-    margin-bottom: 50px;
-  }
-  .parrafo-index p {
-    font-size: 20px;
-  }
-  .menu-cards .cards {
-    border-bottom: 2px #ffffff solid;
-  }
-  .menu-cards .cards img {
-    width: 40%;
-  }
-  .menu-cards .cards p {
-    padding: 0 15px;
-    font-weight: 300;
-  }
-  .titulo-tarot {
-    padding-top: 30px;
-  }
-  .card-tarot {
-    width: 65%;
-    margin-bottom: 100px;
-  }
-  .card-tarot .texto-card-tarot {
-    width: 70%;
-  }
-  .card-tarot .texto-card-tarot h4 {
+    margin-bottom: 30px;
     font-size: 32px;
   }
-  .card-tarot .texto-card-tarot p {
-    font-size: 20px;
+
+  header.index button {
+    margin-left: 80px;
   }
-  .card-tarot .img-card-tarot {
-    width: 25%;
+
+  .text-content {
+    padding-right: 60px;
+    padding-left: 60px;
   }
-  .titulo-tarot {
-    margin: 100px 0 50px 0;
+
+  .title {
+    font-size: 48px;
   }
-  .container-sobre-mi {
-    margin-top: 120px;
-    height: 700px;
+
+  .header-section {
+    height: 380px;
   }
-  .container-sobre-mi .card-sobre-mi {
-    left: 100px;
-    width: 60%;
-  }
-  .container-sobre-mi .card-sobre-mi img {
-    width: 25%;
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2509803922);
-  }
-  .container-sobre-mi .card-sobre-mi div {
-    margin-left: 20px;
-  }
-  .container-sobre-mi .card-sobre-mi .card-title {
-    font-family: "Bad Script", cursive;
-  }
-  .container-sobre-mi .card-sobre-mi p {
-    font-size: 18px;
-    font-weight: 300;
-  }
-  footer {
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  footer .redes {
-    margin: 30px;
-  }
-  footer .redes img {
-    width: 35px;
-  }
-  .header-secciones {
-    height: 620px;
-    padding-top: 20px;
-  }
-  .header-secciones .header-img-secciones img {
-    width: 80%;
-  }
-  .header-secciones .header-secciones-textos {
-    height: 400px;
-    width: 45%;
-    padding-top: 60px;
-  }
-  .header-secciones .header-secciones-textos h1 {
-    font-size: 64px;
-  }
-  .header-secciones .header-secciones-textos h3 {
-    margin: 40px 0 20px 0;
-    font-size: 36px;
-  }
-  .header-secciones .header-secciones-textos p {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 80px;
-    font-weight: 300;
-  }
-  .header-secciones .header-secciones-textos .boton-2 {
-    font-size: 20px;
-    padding: 3px 40px;
-    margin-right: 20px;
-  }
-  .menu-cards-secciones .cards-b {
-    margin-top: 490px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .menu-cards-secciones .cards-b h4 {
-    font-size: 18px;
-  }
-  .blog {
-    width: 68%;
-    margin-top: 120px;
-  }
-  .blog section {
-    margin-bottom: 80px;
-  }
-  .videos .cont-videos .texto-videos h3 {
-    font-size: 24px;
+
+  .menu-cards-secciones {
+    width: 95%;
   }
   .talleres .card-talleres {
-    width: 65%;
+    width: 85%;
   }
   .talleres .card-talleres .texto-card {
-    width: 60%;
+    width: 65%;
+}
+.talleres .card-talleres .texto-card h4 {
+  font-size: 20px;
+}
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 12px;
   }
-  .talleres .card-talleres .texto-card .boton-talleres {
+
+  hr {
+    width: 85%;
+  }
+
+  header.index h1 {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 32px;
+  }
+
+  header.index p {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  header.index button {
+    margin-left: 40px;
+  }
+
+  /* hero */
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-text {
+    width: 85%;
+  }
+
+  /*menu-cards */
+
+  .menu-cards {
+    width: 95%;
+  }
+
+  .menu-cards .cards p {
     font-size: 16px;
   }
-}
-@media (min-width: 968px) {
-  .titulo-index {
-    font-size: 48px;
-    margin: 50px 0;
+
+  /*Tarot Section */
+  .titulo-tarot {
+    font-size: 32px;
+    margin-top: 60px;
   }
-  .parrafo-index {
-    width: 65%;
-    margin-bottom: 50px;
+
+  .card-tarot {
+    width: 85%;
   }
-  .parrafo-index p {
+
+  .card-tarot .texto-card-tarot h4 {
+    font-size: 28px;
+  }
+
+  .card-tarot .texto-card-tarot .text {
+    font-size: 16px;
+  }
+
+  /*Section Sobre mi  */
+  section.about-me {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 80px;
+    min-height: 80vh;
+  }
+
+  section.about-me .profile-image {
+    width: 180px;
+  }
+
+  section.about-me .text {
+    max-width: 400px;
+  }
+
+  .text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  /*footer  */
+  .footer-title {
     font-size: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer .redes {
+    gap: 25px;
+  }
+
+  footer .redes img {
+    width: 30px;
+  }
+
+  /* INICIO Header seciones*/
+  .header-section {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .header-section .text-content h2 {
+    margin: 20px 0 20px 0;
+  }
+
+  .text-content {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .text-content h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .menu-cards-secciones .cards-b {
+    padding-inline: 5px;
+  }
+
+  /* INICIO Section blog*/
+  .blog {
+    margin: auto;
+    width: 85%;
+  }
+
+  /* INICIO Section videos*/
+
+  .videos {
+    width: 85%;
+  }
+
+  /* INICIO Section preguntas*/
+
+  .consultas {
+    width: 85%;
+  }
+
+  .dejar-consulta {
+    width: 85%;
+    margin: auto;
+  }
+
+  .dejar-consulta .text {
+    font-size: 20px;
+  }
+
+  /* INICIO Section Talleres*/
+  
+}
+
+
+@media (max-width: 575px) {
+  header.index h1 {
+    margin-left: 30px;
+    font-size: 24px;
+  }
+
+  header.index p {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  header.index button {
+    margin-left: 30px;
+  }
+
+  .hero-image {
+    margin: 40px auto;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text-content {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+}
+
+/* FIN Responsive Design index*/

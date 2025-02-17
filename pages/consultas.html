@@ -10,68 +10,59 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../img/fav-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/fav-icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>La psicoexploradora - Consultas</title>
 </head>
 
-<body class="body-secciones">
+<body class="body-sections">
 
-    <header class="header-secciones">
-
-        <div class="header-img-secciones">
-            <img src="../img/img-secciones.png" alt="">
+    <header class="header-section">
+        <div class="intro">
+            <div class="illustration">
+                <img src="../img/img-secciones.png" alt="Ilustración">
+            </div>
+            <div class="text-content">
+                <h1 class="title">La psico exploradora</h1>
+                <h2>CONSULTAS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <a href="../index.html"><button class="button primary">Inicio</button></a>
+            </div>
         </div>
-        <div class="header-secciones-textos">
-            <a href="blog.html">
-                <h1>La psico exploradora</h1>
-            </a>
-            <h3>CONSULTAS</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua.
-            </p>
-
-            <a href="../index.html">
-                <button type="button" class="boton-2">Inicio</button>
-            </a>
-        </div>
-
     </header>
+
 
     <div class="menu-cards-secciones">
         <a href="blog.html">
             <div class="cards-b no-activo">
                 <img src="../img/blog.png" alt="">
-                <h4>BLOG</h4>
-
+                <p>BLOG</p>
             </div>
         </a>
         <a href="videos.html">
             <div class="cards-b no-activo">
                 <img src="../img/videos.png" alt="">
-                <h4>VIDEOS</h4>
-
+                <p>VIDEOS</p>
             </div>
         </a>
         <a href="consultas.html">
             <div class="cards-b activo">
                 <img src="../img/consultas.png" alt="">
-                <h4>PREGUNTAS</h4>
-
+                <p>PREGUNTAS</p>
             </div>
         </a>
         <a href="talleres.html">
             <div class="cards-b no-activo">
                 <img src="../img/talleres.png" alt="">
-                <h4>TALLERES</h4>
-
+                <p>TALLERES</p>
             </div>
         </a>
     </div>
     <main class="consultas">
+        <!--
         <section class="seccion-form-consultas">
             <h4>Escribe acá tu pregunta.</h4>
             <form action="consulta.php" method="post" class="containerForm">
@@ -83,10 +74,10 @@
                     <label class="label-form" for="message">Deja tu consulta:</label>
                     <textarea class="inputs-form" name="message" rows="1" required></textarea>
 
-                    <button id="botonEnviar" type="submit" value="Enviar">Enviar</button>
+                    <button class="button secondary" id="botonEnviar" type="submit" value="Enviar">Enviar</button>
                 </div>
             </form>
-        </section>
+        </section>-->
 
         <h2 class="texto-consultas">Preguntas frecuentes</h2>
 
@@ -117,32 +108,34 @@
                     aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-
         </section>
-
-
     </main>
 
-<hr>
+    <hr>
+
+    <div class="dejar-consulta">
+        <p class="text">Si tenes alguna pregunta no dudes en dejarla</p>
+        <a
+            href="mailto:correo@example.com?subject=Consulta&body=Hola,%20quisiera%20dejar%20una%20consulta.">
+            <button type="button" class="button secondary">Enviar mi consulta</button>
+        </a>
+    </div>
+
+    <hr>
 
     <footer>
-        <div class="footer">
-            <h4>Sigamos contectados</h4>
-            <div class="redes">
-                <a href=""><img src="../img/redes/instagram.png" alt="icono instagram"></a>
-                <a href=""><img src="../img/redes/facebook.png" alt="icono facebook"></a>
-                <a href=""><img src="../img/redes/youtube.png" alt="icono youtube"></a>
-                <a href=""><img src="../img/redes/linkedin.png" alt="icono linkedin"></a>
-                <a href=""><img src="../img/redes/blog.png" alt="icono blog"></a>
-                <a href=""><img src="../img/redes/google.png" alt="icono google"></a>
-            </div>
-            <h6>©2025 La psico exploradora - Terminos y condiciones - Politicas de privacidad.</h6>
-            <h6>Diseño y desarrollo M.A. Estudio.</h6>
+        <p class="footer-title">Sigamos contectados</p>
+        <div class="redes">
+            <a href=""><img src="../img/redes/instagram.png" alt="icono instagram"></a>
+            <a href=""><img src="../img/redes/facebook.png" alt="icono facebook"></a>
+            <a href=""><img src="../img/redes/youtube.png" alt="icono youtube"></a>
+            <a href=""><img src="../img/redes/linkedin.png" alt="icono linkedin"></a>
+            <a href=""><img src="../img/redes/blog.png" alt="icono blog"></a>
+            <a href=""><img src="../img/redes/google.png" alt="icono google"></a>
         </div>
+        <p>©2025 La psico exploradora - Terminos y condiciones - Politicas de privacidad.</p>
+        <p>Diseño y desarrollo M.A. Estudio.</p>
     </footer>
-
-
-
 
 
 
