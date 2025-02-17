@@ -684,15 +684,22 @@ footer .redes img:hover {
   .menu-cards-secciones {
     width: 95%;
   }
+
   .talleres .card-talleres {
     width: 85%;
   }
+
+  .talleres .card-talleres .img-card {
+    width: 35%;
+  }
+
   .talleres .card-talleres .texto-card {
-    width: 65%;
-}
-.talleres .card-talleres .texto-card h4 {
-  font-size: 20px;
-}
+    width: 60%;
+  }
+
+  .talleres .card-talleres .texto-card h4 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -861,7 +868,7 @@ footer .redes img:hover {
   }
 
   /* INICIO Section Talleres*/
-  
+
 }
 
 
