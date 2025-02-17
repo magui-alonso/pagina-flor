@@ -755,6 +755,9 @@ footer .redes img:hover {
   .menu-cards .cards p {
     font-size: 14px;
   }
+  .menu-cards-secciones {
+    margin-bottom: 80px;
+  }
 
   /*Tarot Section */
   .titulo-tarot {
@@ -765,7 +768,9 @@ footer .redes img:hover {
   .card-tarot {
     width: 90%;
   }
-
+  .card-tarot .texto-card-tarot  {
+    width: 80%;
+  }
   .card-tarot .texto-card-tarot h4 {
     font-size: 24px;
   }
@@ -780,8 +785,8 @@ footer .redes img:hover {
     padding-left: 0;
     padding-right: 0;
     margin: auto;
-    margin-top: 80px;
-    min-height: 70vh;
+    margin-top: 60px;
+    min-height: 60vh;
 
   }
 
@@ -792,11 +797,12 @@ footer .redes img:hover {
   }
 
   section.about-me .profile-image {
-    width: 180px;
+    width: 35%;
+    height: auto;
   }
 
   section.about-me .text {
-    max-width: 400px;
+    width: 80%;
   }
 
   .text h2 {
@@ -831,7 +837,7 @@ footer .redes img:hover {
   }
 
   .header-section .text-content h2 {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 5px 0;
   }
 
   .text-content {
@@ -851,10 +857,6 @@ footer .redes img:hover {
 
   .text-content p {
     font-size: 14px;
-  }
-
-  .menu-cards-secciones .cards-b {
-    padding-inline: 0;
   }
 
   /* INICIO Section blog*/
@@ -916,7 +918,7 @@ footer .redes img:hover {
 
   .text-content {
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 
