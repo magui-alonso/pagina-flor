@@ -170,10 +170,57 @@ header.index button {
 
 .menu-cards .cards p {
   color: #fff;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
   padding-bottom: 10px;
+}
 
+/* FIN Section menu-cards */
+
+/* INICIO Section menu-cards-secciones */
+.menu-cards-secciones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.menu-cards-secciones a {
+  text-decoration: none;
+}
+
+.menu-cards-secciones .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1.5px #b7b7b7 solid;
+  padding-inline: 5px;
+}
+
+.menu-cards-secciones .cards:hover {
+  border-bottom: 1.5px #CC4B3D solid;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.menu-cards-secciones .cards img {
+  width: 50%;
+  height: auto;
+}
+
+.menu-cards-secciones .cards p {
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.menu-cards-secciones .activo {
+  border-bottom: 2px #CC4B3D solid;
+}
+
+.menu-cards-secciones .no-activo {
+  border-bottom: 1.5px #b7b7b7 solid;
 }
 
 /* FIN Section menu-cards */
@@ -269,6 +316,7 @@ section.about-me {
   padding-left: 100px;
   padding-right: 100px;
   margin-top: 150px;
+  width: 100%;
 }
 
 section.about-me .content {
@@ -406,46 +454,6 @@ footer .redes img:hover {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
-.menu-cards-secciones {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  background-color: transparent;
-  margin-bottom: 100px;
-}
-
-.menu-cards-secciones a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.menu-cards-secciones .activo {
-  border-bottom: 2px #CC4B3D solid;
-}
-
-.menu-cards-secciones .no-activo {
-  border-bottom: 1.5px #b7b7b7 solid;
-}
-
-.menu-cards-secciones .cards-b {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-inline: 20px;
-}
-
-.menu-cards-secciones .cards-b:hover {
-  filter: drop-shadow(2px 2px 6px #CC4B3D);
-}
-
-.menu-cards-secciones .cards-b img {
-  width: 50%;
-  height: auto;
-}
-
 
 /* FIN Header seciones*/
 
@@ -735,6 +743,7 @@ footer .redes img:hover {
 
   .hero-text {
     width: 85%;
+    font-size: 16px;
   }
 
   /*menu-cards */
@@ -744,7 +753,7 @@ footer .redes img:hover {
   }
 
   .menu-cards .cards p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /*Tarot Section */
@@ -754,11 +763,11 @@ footer .redes img:hover {
   }
 
   .card-tarot {
-    width: 85%;
+    width: 90%;
   }
 
   .card-tarot .texto-card-tarot h4 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .card-tarot .texto-card-tarot .text {
@@ -768,10 +777,18 @@ footer .redes img:hover {
   /*Section Sobre mi  */
   section.about-me {
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
     margin-top: 80px;
-    min-height: 80vh;
+    min-height: 70vh;
+
+  }
+
+  section.about-me .content {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 220px;
   }
 
   section.about-me .profile-image {
@@ -837,29 +854,29 @@ footer .redes img:hover {
   }
 
   .menu-cards-secciones .cards-b {
-    padding-inline: 5px;
+    padding-inline: 0;
   }
 
   /* INICIO Section blog*/
   .blog {
     margin: auto;
-    width: 85%;
+    width: 90%;
   }
 
   /* INICIO Section videos*/
 
   .videos {
-    width: 85%;
+    width: 90%;
   }
 
   /* INICIO Section preguntas*/
 
   .consultas {
-    width: 85%;
+    width: 90%;
   }
 
   .dejar-consulta {
-    width: 85%;
+    width: 90%;
     margin: auto;
   }
 
@@ -912,5 +929,16 @@ footer .redes img:hover {
 
 
 }
+
+@media (max-width: 400px) {
+  .menu-cards-secciones .cards {
+    padding-inline: 0;
+  }
+  .menu-cards-secciones .cards p {
+    font-size: 14px;
+  }
+}
+
+
 
 /* FIN Responsive Design index*/
