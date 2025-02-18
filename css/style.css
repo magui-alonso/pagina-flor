@@ -189,6 +189,7 @@ header.index button {
 
 .menu-cards-secciones a {
   text-decoration: none;
+  width: 20%;
 }
 
 .menu-cards-secciones .cards {
@@ -196,16 +197,15 @@ header.index button {
   flex-direction: column;
   align-items: center;
   border-bottom: 1.5px #b7b7b7 solid;
-  padding-inline: 5px;
 }
 
 .menu-cards-secciones .cards:hover {
-  border-bottom: 1.5px #CC4B3D solid;
-  box-shadow: 0 8px 6px -6px black;
+  border-bottom: 2px #77e4ff solid;
+  box-shadow: 0 8px 6px -6px #3e3e3e;
 }
 
 .menu-cards-secciones .cards img {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
@@ -412,45 +412,40 @@ footer .redes img:hover {
 .header-section {
   text-align: center;
   background: linear-gradient(180deg, rgba(247, 135, 103, 0.1672) 0%, rgba(12, 14, 25, 0.44) 100%);
-  height: 450px;
-}
-
-.title {
-  font-size: 64px;
-  font-family: "Bad Script", cursive;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-}
-
-.header-section .text-content h2 {
-  margin: 40px 0 20px 0;
+  height: 500px;
 }
 
 .intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   padding-top: 30px;
 }
 
-.illustration img {
-  width: 100%;
+.intro img {
+  width: 30%;
 }
 
 .text-content {
+  width: 60%;
   text-align: left;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 80px;
 }
 
-.text-content h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+.intro .text-content .title {
+  font-size: 64px;
+  font-family: "Bad Script", cursive;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-.text-content p {
-  font-size: 1em;
+.intro .text-content h2 {
+  margin: 40px 0 20px 0;
+  font-size: 24px;
+}
+
+.intro .text-content p {
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -542,50 +537,6 @@ footer .redes img:hover {
   margin: auto;
 }
 
-/*
-.consultas .seccion-form-consultas {
-  margin: 100px 0;
-}
-.consultas .seccion-form-consultas h4 {
-  text-align: center;
-  font-size: 24px;
-  margin: 30px;
-}
-
-.consultas .seccion-form-consultas .containerForm {
-  margin: auto;
-}
-.consultas .seccion-form-consultas .campos-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.consultas .seccion-form-consultas .campos-form .label-form {
-  color: #ffffff;
-  font-size: 16px;
-}
-.consultas .seccion-form-consultas .campos-form .inputs-form {
-  background-color: transparent;
-  width: 60%;
-  border: none;
-  border-bottom: #CC4B3D solid 2px;
-  margin-bottom: 20px;
-  height: 20px;
-}
-.consultas .seccion-form-consultas .campos-form #botonEnviar {
-  color: #fff;
-  background-color: transparent;
-  font-size: 9px;
-  color: #ffffff;
-  padding: 2px 20px;
-  border: #CC4B3D solid 1px;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-}
-.consultas .seccion-form-consultas .campos-form #botonEnviar:hover {
-  background-color: #CC4B3D;
-}*/
-
 .consultas .texto-consultas {
   font-family: "Bad Script", cursive;
   font-size: 42px;
@@ -596,6 +547,12 @@ footer .redes img:hover {
 
 .consultas .respuestas {
   margin: 40px 0;
+}
+.consultas .respuestas h4 {
+  text-align: left;
+}
+.consultas .respuestas p {
+  text-align: left;
 }
 
 .dejar-consulta .text {
@@ -676,23 +633,36 @@ footer .redes img:hover {
     margin-left: 80px;
   }
 
-  .text-content {
-    padding-right: 60px;
-    padding-left: 60px;
+  /* INICIO Header seciones*/
+  .header-section {
+    height: 400px;
   }
 
-  .title {
+  .intro img {
+    width: 30%;
+  }
+
+  .intro .text-content {
+    width: 60%;
+    text-align: left;
+    padding-right: 80px;
+  }
+
+  .intro .text-content .title {
     font-size: 48px;
   }
 
-  .header-section {
-    height: 380px;
+  .intro .text-content h2 {
+    font-size: 20px;
   }
-
+  
   .menu-cards-secciones {
-    width: 95%;
+    width: 90%;
+    margin-bottom: 80px;
   }
-
+  .menu-cards-secciones a {
+    width: 25%;
+  }
   .talleres .card-talleres {
     width: 85%;
   }
@@ -708,15 +678,14 @@ footer .redes img:hover {
   .talleres .card-talleres .texto-card h4 {
     font-size: 18px;
   }
+  hr {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
   .button {
     font-size: 12px;
-  }
-
-  hr {
-    width: 85%;
   }
 
   header.index h1 {
@@ -755,9 +724,6 @@ footer .redes img:hover {
   .menu-cards .cards p {
     font-size: 14px;
   }
-  .menu-cards-secciones {
-    margin-bottom: 80px;
-  }
 
   /*Tarot Section */
   .titulo-tarot {
@@ -768,9 +734,11 @@ footer .redes img:hover {
   .card-tarot {
     width: 90%;
   }
-  .card-tarot .texto-card-tarot  {
+
+  .card-tarot .texto-card-tarot {
     width: 80%;
   }
+
   .card-tarot .texto-card-tarot h4 {
     font-size: 24px;
   }
@@ -787,7 +755,6 @@ footer .redes img:hover {
     margin: auto;
     margin-top: 60px;
     min-height: 60vh;
-
   }
 
   section.about-me .content {
@@ -832,31 +799,22 @@ footer .redes img:hover {
     height: 300px;
   }
 
-  .title {
-    font-size: 32px;
+  .intro img {
+    width: 30%;
   }
 
-  .header-section .text-content h2 {
-    margin: 20px 0 5px 0;
-  }
-
-  .text-content {
+  .intro .text-content {
+    width: 60%;
+    text-align: left;
     padding-right: 40px;
-    padding-left: 40px;
   }
 
-  .text-content h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
+  .intro .text-content .title {
+    font-size: 40px;
   }
 
-  .text-content p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .text-content p {
-    font-size: 14px;
+  .intro .text-content h2 {
+    font-size: 20px;
   }
 
   /* INICIO Section blog*/
@@ -887,7 +845,9 @@ footer .redes img:hover {
   }
 
   /* INICIO Section Talleres*/
-
+  .talleres {
+    margin-bottom: 60px;
+  }
 }
 
 
@@ -912,35 +872,45 @@ footer .redes img:hover {
     margin: 40px auto;
   }
 
-  .title {
-    font-size: 24px;
+   /* INICIO Header seciones*/
+   .header-section {
+    height: 220px;
+  }
+  .menu-cards-secciones {
+    margin-bottom: 60px;
+  }
+  .intro img {
+    width: 30%;
   }
 
-  .text-content {
+  .intro .text-content {
+    width:65%;
+    text-align: left;
     padding-right: 20px;
-    padding-left: 0;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .links {
-    flex-direction: column;
-    gap: 10px;
   }
 
+  .intro .text-content .title {
+    font-size: 28px;
+  }
 
+  .intro .text-content h2 {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+  }
+  .intro .text-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 400px) {
   .menu-cards-secciones .cards {
     padding-inline: 0;
   }
+
   .menu-cards-secciones .cards p {
     font-size: 14px;
   }
 }
-
-
 
 /* FIN Responsive Design index*/
